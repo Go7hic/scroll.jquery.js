@@ -82,7 +82,7 @@ function pageTouchstart(e){
 };
 
 //插件获取触摸的值
-function V_start(val){
+function startValue(val){
     initP = val;
     mousedown = true;
     firstP = initP;
@@ -106,7 +106,7 @@ function pageTouchmove(e){
         }
 
     //设置一个页面开始移动
-    if(moveP&&startM&&imgs>1){
+    if(moveP&&startM&&imgs>1) {
         //判断方向并让一个页面出现开始移动
         if(!p_b){
             p_b = true;
@@ -141,10 +141,9 @@ function pageTouchmove(e){
         }
 
             //根据移动设置页面的值
-            if(!DNmove){
+            if (!DNmove) {
                 //滑动带动页面滑动
-                if(move){
-
+                if (move) {
 
                     //移动中设置页面的值（top）
                     start = false;
