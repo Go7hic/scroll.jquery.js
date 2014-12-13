@@ -5,7 +5,7 @@ scroll.jquery.js
 
 主要功能：
 
-1. share.js
+####1.  share.js
 微信分享功能，在微信中分享给好友或分享到自己的朋友圈时 设置图片，标题，描述。
 
 在 index.html 里设置
@@ -18,13 +18,13 @@ scroll.jquery.js
             wx_share_out(shareTitle,imgUrl,descContent);
         });
 ```
-2. 无限滚动
+####2.  无限滚动
 ```
  var gd = true;//true:无限滚动，false:到最后页不能再滚
 ```
 在 index.html 文件设置页面是否循环滚动
 
-3. 背景音乐
+####3.  背景音乐
 
 默认背景音乐是开启的, 自己更换背景音乐
 
