@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>PS 此乃何物</title>
+    <meta name="Keywords" content="thank">
+    <meta name="Description" content="">
+
+    <!-- 移动设备支持 -->
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link href="style/reset.css" rel="stylesheet" type="text/css">
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="share.js"></script>
+    <script>
+        // 微信分享的标题和图片，描述
+        $(function() {
+            var shareTitle = 'PS 此乃何物';
+            var imgUrl = '';//没有则取内容第一张图片，可以是隐藏元素
+            var descContent = $("#div_fx_describe").text();
+            wx_share_out(shareTitle,imgUrl,descContent);
+        });
+    </script>
+</head>
+<body>
+    <div style="display:none;" id="div_fx_describe">PS 此乃何物</div>
+    <script>
+        var gd = true;//true:无限滚动，false:到最后页不能再滚
+    </script>
+    <div class="share-img" style="display:none;">
+        <img src="img/loading.jpg" alt="" />
+    </div>
+    <div id="loading" class="loading">
+        <div class="loadbox">
+           <img src="img/loading.gif" alt="" />
+        </div>
+    </div>
+
+    <div class="p-index main" id="con">
+         <!-- 背景音乐 -->
+        <div class="bg-music">
+            <div class="music" id="musicWrap">
+                <span class="close" onclick="musicPaused()">开关</span>
+                <audio id="clickMusic" autoplay="autoplay" type="audio/mpeg">
+                    <source src="music.mp3">
+                    <source src="music.ogg">
+                    <source src="music.wav">
+                    你的浏览器不支持此功能
+                </audio>
+
+            </div>
+        </div>
+        <!--上下滚动 start-->
+        <div class="m-page " >
+            <div class="m-img" ><a href="javascript:;"><img src="img/1.png" alt="" /></a></div>
+        </div>
+
+        <div class="m-page hide" >
+            <div class="m-img" ><a href="javascript:;"><img src="img/2.png" alt="" /></a></div>
+        </div>
+
+        <div class="m-page hide" >
+            <div class="m-img" ><a href="javascript:;"><img src="img/3.png" alt="" /></a></div>
+        </div>
+
+        <div class="m-page hide" >
+        <div class="m-img" ><a href="javascript:;"><img src="img/4.png" alt="" /></a></div>
+        </div>
+        <div class="m-page hide" >
+        <div class="m-img" ><a href="javascript:;"><img src="img/5.png" alt="" /></a></div>
+        </div>
+        <div class='u-arrow'><img src="img/btn01_arrow.png" /></div>
+        <!--上下滚动代码 end-->
+
+    </div>
+
+    <script type="text/javascript" src="easing.js"></script>
+    <script type="text/javascript" src="scroll.jquery.js"></script>
+    <script>
+        $(function () {
+            var audio = document.getElementById('clickMusic');
+            audio.oncanplay = playmusic();
+            // 对于安卓部分机型不能自动播放采用触屏后自动播放
+            var firsttaped = 0;
+            function playmusic(){
+                $('html').on('touchstart',function(){
+                    if(firsttaped == 0){
+                        audio.play();
+                        firsttaped = 1;
+                    }
+                });
+            };
+        })
+    </script>
+    <script type="text/javascript">
+        // 音乐控制
+       function musicPaused() {
+            var oAudio = document.getElementById('clickMusic');
+            if (oAudio.paused) {
+                oAudio.play()
+            } else {
+               oAudio.pause()
+            }
+        }
+
+    </script>
+    <script>
+         // 打开是加载的图标
+        window.onload=function(){
+            $("#loading").hide();
+        }
+     </script>
+ </body>
+ </html>
+
+
