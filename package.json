@@ -1,0 +1,26 @@
+{
+  "name": "scroll.jquery.js",
+  "version": "1.0.0",
+  "description": "移动端的滑动插件",
+  "main": "easing.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dyygtfx/scroll.jquery.js.git"
+  },
+  "keywords": [
+    "mobile",
+    "scroll"
+  ],
+  "author": "Go7hic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dyygtfx/scroll.jquery.js/issues"
+  },
+  "homepage": "https://github.com/dyygtfx/scroll.jquery.js#readme",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  }
+}
