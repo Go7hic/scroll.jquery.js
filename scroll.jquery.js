@@ -1,4 +1,3 @@
-// 定义各种需要的变量
 var pageCount = '', //页面的数目
     page_n = 1, //初始页面位置
     initP = null, //初值控制值
@@ -14,7 +13,6 @@ var pageCount = '', //页面的数目
     DNmove = false, //其他操作不让页面切换
     mapS = null, //地图变量值
     canmove = false, //首页返回最后一页
-
     textNode = [], //文本对象
     winHeight = $(window).height(),
     textInt = 1; //文本对象顺序

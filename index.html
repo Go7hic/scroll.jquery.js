@@ -20,15 +20,7 @@
     <link href="style/style.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="share.js"></script>
-    <script>
-        // 微信分享的标题和图片，描述
-        $(function() {
-            var shareTitle = 'PS 此乃何物';
-            var imgUrl = '';//没有则取内容第一张图片，可以是隐藏元素
-            var descContent = $("#div_fx_describe").text();
-            wx_share_out(shareTitle,imgUrl,descContent);
-        });
-    </script>
+
 </head>
 <body>
     <div style="display:none;" id="div_fx_describe">PS 此乃何物</div>
@@ -121,5 +113,3 @@
      </script>
  </body>
  </html>
-
-
