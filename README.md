@@ -43,9 +43,9 @@ scroll.jquery.js
             </div>
         </div>
 ```
-####4.loading.png
+#### 4.loading.png
  页面打开时加载的 小图标，可以自己替换。
 
-####5.easing.js 
+#### 5.easing.js 
 是一个动画效果插件，可以给页面添加动画效果，但是示例页面没有这个效果，所以也可以不用引用这个文件
 
