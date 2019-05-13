@@ -1,6 +1,8 @@
 scroll.jquery.js
 ================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/dyygtfx/scroll.jquery.js.svg)](https://greenkeeper.io/)
+
 手机端滑动效果，适用于微信内活动推广的页面
 
 
