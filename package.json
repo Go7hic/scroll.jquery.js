@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/dyygtfx/scroll.jquery.js#readme",
   "dependencies": {
-    "gulp": "^3.9.0"
+    "gulp": "^4.0.2"
   }
 }
